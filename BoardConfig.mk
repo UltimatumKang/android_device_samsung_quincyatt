@@ -26,8 +26,6 @@
 # inherit from the proprietary version
 -include vendor/samsung/quincyatt/BoardConfigVendor.mk
 
-TARGET_GCC_VERSION := 4.6
-
 TARGET_BOOTLOADER_BOARD_NAME := MSM8660_SURF
 
 # Assert
@@ -36,6 +34,7 @@ TARGET_OTA_ASSERT_DEVICE := SGH-I717,quincyatt
 # Kernel
 TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-common
 TARGET_KERNEL_CONFIG        := cyanogenmod_quincyatt_defconfig
+TARGET_KERNEL_CUSTOM_LINARO_TOOLCHAIN := arm-eabi-4.6/bin/arm-eabi-
 
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00A00000
